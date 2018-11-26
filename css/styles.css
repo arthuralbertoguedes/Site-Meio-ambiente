@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+}
+a:hover{
+    text-decoration: none;
+    color: green;
+    transition:0.5s;
+}
+a{
+    transition:0.5s;
+    color: black;
+}
+
+
+p{
+    font-family: 'Pragati Narrow', sans-serif;
+    font-weight: 400;
+   
+}
+.titleWhite{
+    color: white;
+    font-size: 45px;
+}
+
+h1,h2{
+    font-family: 'Lobster Two', cursive;
+}
+/*Menu superior*/
+.h1{
+    font-size: 25px !important;
+    font-family: 'Lobster Two', cursive;
+    color: rgba(253, 253, 253, 0.8);
+}
+.h1 p{
+    font-size: 10px;
+}
+.menuDados{
+    height: 80px;
+    overflow: hidden;
+}
+.paragrafoMenu{
+    font-size: 10px;
+    font-family: 'Acme', sans-serif;
+}
+/*Seção Trabalhos*/
+.titleServices{
+    font-size: 20px;
+}
+.fa-leaf,.fa-recycle,.fa-tint,.fa-sun{
+    font-size: 50px;
+    border: 1px solid #aaa;
+    border-radius: 100%;
+    padding: 25px;
+    color: black;
+    transition:0.5s;
+}    
+.fa-tint{
+    padding: 25px 30px;
+
+}
+.fa-leaf:hover,.fa-recycle:hover,.fa-tint:hover,.fa-sun:hover{
+    transition:0.5s;
+    border: 1px solid green;
+    background-color: green;
+}
+
+.maxHeight{
+    max-height: 280px;
+}
+.max{
+    height: 100%;
+}
+
+
+/*Seção desmatamento*/
+.secaoDesmatamento{
+    background: url("../images/img1.jpg") top left/cover no-repeat;
+}
+.pWhite{
+    color: rgba(255,255,255,0.8);
+    font-size: 20px;
+    font-weight: 200;
+}
+.paragrafoSecaoDesmatamento::after{
+    content:'';
+    display: block;
+    color: white;
+    border-bottom: 3px solid white;
+    width: 35px;   
+    margin: 15px auto;
+}
+.fundoOpaco{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 999;
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-bottom: 100px !important;
+}
+
+.animationMenu{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    left: 0;
+    width:  100%;
+    transition:  2s;
+    animation: aparecer 2s;
+}
+
+/*Seção testemunhos*/
+.sectionTestimonials{
+   
+    background: url('../images/img3.jpg') center center/cover no-repeat;
+    
+}
+
+.divSectionTestimonials{
+    margin-top: 120px;
+    background: #ddd;
+    padding: 20px 40px;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    line-height:20px;
+    height: 220px !important;
+    font-size: 12px;
+   
+}
+.imgDepoimentos{
+    position: absolute;
+    top: -35%;
+    left: 40%;
+    border-radius: 100%;
+}
+.paragrafoSectionTestimonials::before{
+    content: '"';
+    font-size: 40px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+/*Animaçoes*/
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+}
+
+@keyframes teste{
+    0%{
+        opacity: 0.2;
+    }
+}
+
+
+
+@media (min-width: 568px){
+    .divSectionTestimonials{
+        font-size: 18px;
+        padding-top: 40px;
+        height: 190px !important;
+    }
+    .paragrafoMenu{
+        font-size:0.8em;
+        
+    }
+    .menuDados{
+        padding-top: 25px !important;
+    }
+    .h1{
+        margin-top: -30px;
+    }
+}
+@media (min-width: 780px){
+    .menuDados{
+        padding-top: 15px !important;
+        height: 50px;
+    }
+    .h1{
+        font-size: 55px !important;
+        margin-top: -50px;
+    }
+}
